@@ -35,9 +35,13 @@ The arrow represents an outgoing edge from the entity on the left to the entity 
 # How to go from raw dataset to the format accepted by our code?
 
 Step 1: Download the dataset(s) from the provided links.
+
 Step 2: Convert the DARPA datasets to .pkl format using the parsers. Streamspot dataset can be pre-processed using the provided parser.
+
 Step 3: Crate a query graph using the format above, a one-hop sample generic graph to test the system is provided in test.txt. More complex graphs with higher hop counts will take more time to run.
+
 Step 4: To run the algorithm, use `python main.py <provenance graph file> <query graph file> <threshold>`, e.g., for the provided example, run `python main.py e3_chunk.pkl query1-test.txt 0.35`. 
+
 The terminal will output the alignment score and the exact aligned nodes.
 
 
